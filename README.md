@@ -1,4 +1,4 @@
-# 🐪 Bazaar-AI
+# 🐪 Mansa: A Bazaar-AI RL Agent
 
 **Bazaar-AI** is a Python-based library built on top of [Arelai](https://github.com/chandra-gummaluru/arelai) that faithfully recreates the strategic card game Jaipur. It provides:
 
