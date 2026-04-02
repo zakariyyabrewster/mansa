@@ -12,14 +12,17 @@ sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from backend.bazaar import Bazaar, BasicBazaar
 
-# from agents.mansa2_agent import MansaAgent as Agent1
 # from agents.mansa_agent import MansaAgent as Agent1
+from agents.mansa_agent import AdvancedHeuristicAgent as Agent1
+# from agents.test3_agent import AdvancedHeuristicV2Agent as Agent1
+
 # from agents.optimal_agent import OptimalAgent as Agent1
-from agents.simple_agent import SmartAgent as Agent1
+# from agents.simple_agent import SmartAgent as Agent1
+# from agents.simple_agent import SmartAgent as Agent2
 from agents.random_agent import RandomAgent as Agent2
 
-NUM_GAMES = 100    # How many games to play total
-SEED_START = 100       # Starting random seed (change for different matchups)
+NUM_GAMES = 100  # How many games to play total
+SEED_START = 41     # Starting random seed (change for different matchups)
 
 def run_single_game(seed: int, verbose=False) -> Dict[str, int]:
     """Runs one game and returns final scores."""
